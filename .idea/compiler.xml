@@ -7,22 +7,28 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="app-config" />
-        <module name="config" />
+        <module name="common" />
         <module name="eureka-server" />
-        <module name="fileSystem" />
         <module name="gateway" />
         <module name="moudle" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="config" target="1.8" />
+      <module name="demo" target="1.8" />
+      <module name="fileSystem" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="app-config" options="-parameters" />
+      <module name="common" options="-parameters" />
       <module name="config" options="-parameters" />
-      <module name="eureka-server" options="" />
+      <module name="demo" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
       <module name="fileSystem" options="-parameters" />
-      <module name="gateway" options="" />
-      <module name="moudle" options="" />
+      <module name="gateway" options="-parameters" />
+      <module name="moudle" options="-parameters" />
     </option>
   </component>
 </project>
